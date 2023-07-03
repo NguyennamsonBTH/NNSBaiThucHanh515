@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Net_Core_API\\NewApp\\NewApp.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Desktop\\NNSBaiThucHanh515\\NewApp\\NewApp.csproj",
       "projectName": "NewApp",
-      "projectPath": "D:\\Net_Core_API\\NewApp\\NewApp.csproj",
+      "projectPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\NNSBaiThucHanh515\\NewApp\\NewApp.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\Net_Core_API\\NewApp\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\NNSBaiThucHanh515\\NewApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
