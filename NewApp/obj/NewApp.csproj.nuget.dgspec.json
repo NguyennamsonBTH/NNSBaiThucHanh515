@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\OneDrive\\Desktop\\NNSBaiThucHanh515\\NewApp\\NewApp.csproj": {}
+    "D:\\Net_Core_API\\NewApp\\NewApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\OneDrive\\Desktop\\NNSBaiThucHanh515\\NewApp\\NewApp.csproj": {
+    "D:\\Net_Core_API\\NewApp\\NewApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Desktop\\NNSBaiThucHanh515\\NewApp\\NewApp.csproj",
+        "projectUniqueName": "D:\\Net_Core_API\\NewApp\\NewApp.csproj",
         "projectName": "NewApp",
-        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\NNSBaiThucHanh515\\NewApp\\NewApp.csproj",
+        "projectPath": "D:\\Net_Core_API\\NewApp\\NewApp.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\NNSBaiThucHanh515\\NewApp\\obj\\",
+        "outputPath": "D:\\Net_Core_API\\NewApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
