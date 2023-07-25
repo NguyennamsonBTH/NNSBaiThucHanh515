@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using DemoNNS.Models;
 
 namespace DemoNNS.Controllers;
-
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
