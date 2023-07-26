@@ -3,13 +3,20 @@
         <a class="btn btn-sucess" asp-action="Create">Create a new student</a>
     </p>
     <table class="table table-all">
-        <tr>Student ID</tr>
-        <tr>Student Name</tr>
+        <tr>
+            <tr>Student ID</tr>
+            <tr>Student Name</tr>
+            <tr></tr>
+        </tr>
         @foreach (var item in Model)
         {
             <tr>
                 <td>@Html.DisplayFor(m => item.StudentID)</td>
                 <td>@Html.DisplayFor(m => item.StudentName)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.StudentID">Sua</a>
+                    <a asp-action="Delete" asp-route-id="@item.StudentID">Xoa</a>
+                </td>
             </tr>
         }
     </table>

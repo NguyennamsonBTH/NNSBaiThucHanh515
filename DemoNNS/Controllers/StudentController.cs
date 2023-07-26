@@ -2,11 +2,14 @@ using DemoNNS.Models;
 using Microsoft.AspNetCore.Mvc;
 using DemoNNS.Data;
 using Microsoft.EntityFrameworkCore;
+
 namespace DemoNNS.Controllers
 {
     public class StudentController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private string id;
+
         public StudentController (ApplicationDbContext context)
         {
             _context = context;
@@ -64,7 +67,7 @@ namespace DemoNNS.Controllers
                 {
                     if (!StudentExists(std.StudentID))
                     {
-                    return NotFound();
+                        return NotFound();
                     }
                     else
                     {
@@ -74,6 +77,33 @@ namespace DemoNNS.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(std); 
+        }
+        public async Task<IActionResult> Delete(string id)
+        {
+            if (id == null)
+                {
+                    return NotFound();
+                }
+            var std = await _context.Students
+                .FirstOrDefaultAsync(m => m.StudentID == id);
+            if (std == null)
+                {
+                    return NotFound();
+                }
+            return View(std);
+        }
+        private bool StudentExists(string studentID)
+        {
+            return _context.Students.Any(e => e.StudentID == id);
+        }
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(string id)
+        {
+            var std = await _context.Students.FindAsync(id);
+            _context.Students.Remove(std);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
     }
 }
